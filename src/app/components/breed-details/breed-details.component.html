@@ -1,0 +1,10 @@
+<div>
+  <h1 *ngIf="breed">{{breed.name}}</h1>
+  <p *ngIf="breed">{{breed.description}}</p>
+  <p *ngIf="breed">Home: {{breed.origin}}</p>
+  <button (click)="addToFavourites()">Add to favourites</button>
+  <br>
+  <br>
+  <p *ngIf="favourited">Successfully added to favourites <i class="fas fa-heart"></i></p>
+  <img [src]="cat.url" alt="">
+</div>
